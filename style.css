@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background: rgb(16, 16, 16);
+	background: linear-gradient(
+		90deg,
+		rgba(16, 16, 16, 1) 0%,
+		rgba(80, 80, 80, 1) 30%,
+		rgba(80, 80, 80, 1) 70%,
+		rgba(16, 16, 16, 1) 100%
+	);
+}
+
+.container {
+	background-color: none;
+	width: 73%;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	top: 0;
+	height: 12em;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	border-radius: 100%;
+	width: 10%;
+	height: auto;
+	box-shadow: 0 0 20px 2px #ffffff40;
+}
+
+.title {
+	font-family: montserrat;
+	font-size: 70px;
+	font-weight: 700;
+	color: #fafafa;
+	text-shadow: 0 5px 20px #ffffff80;
+	margin: 0 237px 0 294px;
+}
+
+button.log-in {
+	width: 150px;
+	height: 60px;
+	background: linear-gradient(to top left, #90ffd7 0%, #6bf2fb 100%);
+	box-shadow: 0 3px 4px 2px #bdffe8b3;
+	border-radius: 80px;
+	display: block;
+
+	font-family: montserrat;
+	font-size: 35px;
+	font-weight: 600;
+	color: #ffffff;
+	text-shadow: 0 2px 6px #ffffff;
+
+	transition: all 0.3s linear;
+}
+
+button.log-in:hover {
+	box-shadow: 0 2px 2px #bdffe8b3;
+}
+
+main {
+	margin: 50px 0;
+}
+
+.weather {
+	width: 250px;
+	height: 300px;
+	border: 2px solid #f2f2f2;
+	border-radius: 30px;
+	position: relative;
+}
+
+.weather-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 28px;
+	top: 50px;
+	margin-top: 18px;
+}
+
+.weather-list-item {
+	font-family: montserrat;
+	font-size: 30px;
+	font-weight: 300;
+	color: #f2f2f2;
+}
+
+.weather-line {
+	margin: 0 auto;
+	width: 180px;
+	height: 1px;
+	background-color: #f2f2f2;
+}
+
+.temperature {
+	font-family: montserrat;
+	font-size: 55px;
+	font-weight: 700;
+	color: #f2f2f2;
+	margin-top: 20px;
+}
+
+.weather-result {
+	font-family: montserrat;
+	font-size: 22px;
+	font-weight: 500;
+	color: #1ef9aa;
+	text-decoration: underline;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+footer {
+	height: 7rem;
+	width: 100%;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+	gap: 61px;
+
+	font-family: montserrat;
+	font-size: 35px;
+	font-weight: 400;
+}
+
+.members {
+	color: #b7b7b7;
+	font-size: 50px;
+}
+
+.member {
+	color: #fafafa;
+}
