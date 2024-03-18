@@ -84,6 +84,10 @@ button.log-in:hover {
 }
 
 main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 50px;
 	margin: 50px 0;
 }
 
@@ -113,10 +117,10 @@ main {
 }
 
 .weather-line {
-	margin: 0 auto;
 	width: 180px;
 	height: 1px;
 	background-color: #f2f2f2;
+	margin: 0 auto;
 }
 
 .temperature {
@@ -138,6 +142,104 @@ main {
 	left: 20px;
 }
 
+.schedule {
+	width: 250px;
+	height: 369px;
+	border: 1px solid #f2f2f2;
+	border-radius: 30px;
+	position: relative;
+
+	font-family: montserrat;
+	color: #f2f2f2;
+}
+
+ul.tue {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+	position: absolute;
+	top: 28px;
+	left: 24px;
+}
+
+li.tue {
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.circle-grad {
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background: linear-gradient(to top left, #e83a3a 0%, #3a60e8 100%);
+	box-shadow: -1px -1px 4px 1px #6784ebb3;
+	box-shadow: 1px 1px 4px 1px #ec6969b3;
+}
+
+.phisical-cult {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.schedule-line-Y {
+	width: 1px;
+	height: 80px;
+	margin: 0 auto;
+	background-color: #f2f2f24d;
+	margin-top: 40px;
+}
+
+ul.thi {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+	position: absolute;
+	top: 28px;
+	right: 14px;
+}
+li.thi {
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.circle-red {
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background: #e83a3a;
+	box-shadow: 0 0 4px 1px #ef6c6cd3;
+}
+
+.philosophy {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.schedule-line-X {
+	width: 220px;
+	height: 1px;
+	margin: 0 auto;
+	background-color: #f2f2f24d;
+	margin: 13px auto;
+}
+
+.schedule-members {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.schedule-member {
+	font-size: 20px;
+	font-weight: 500;
+}
+
 footer {
 	height: 7rem;
 	width: 100%;
@@ -155,11 +257,11 @@ footer ul {
 	font-weight: 400;
 }
 
-.members {
+.footer-members {
 	color: #b7b7b7;
 	font-size: 50px;
 }
 
-.member {
+.footer-member {
 	color: #fafafa;
 }
